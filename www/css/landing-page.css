@@ -1,0 +1,51 @@
+h3{
+  font-family: 'Reem Kufi', sans-serif;
+}
+#landing-view .landing-div {
+  height: 100%;
+}
+#landing-view h3{
+  color: #ffffff;
+}
+#landing-view .landing-heading{
+  margin-left: 50px;
+}
+
+#landing-view .landing-div {
+  /*padding-top: 80px;*/
+  color: #ffffff;
+  background: linear-gradient(15deg, rgb(31, 65, 255), rgb(83, 201, 255));
+
+  font-family: 'Reem Kufi', sans-serif;
+  font-weight: 300;
+}
+#landing-view .header-container{
+  text-align: center;
+  padding-top: 40px;
+  padding-left: 40px;
+  padding-right: 40px;
+}
+#landing-view .started-btn{
+  position: fixed;
+  bottom: 15%;
+  left: 32%;
+  width: 35%;
+}
+#landing-view .login-btn{
+  position: fixed;
+  bottom: 5%;
+  left: 10%;
+  width: 35%;
+}
+#landing-view .signup-btn{
+  position: fixed;
+  bottom: 5%;
+  right: 10%;
+  width: 35%;
+}
+#landing-view .logo {
+  margin: 30px 0px;
+  padding-top: 40px;
+  padding-left: 29%;
+}
+

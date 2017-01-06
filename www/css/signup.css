@@ -1,0 +1,105 @@
+h3{
+  font-family: 'Reem Kufi', sans-serif;
+}
+#signup-view .slider-pager{
+  display: none;
+}
+#signup-view .slider {
+  height: 100%;
+}
+#signup-view .back-button , #signup-view h3, #signup-view input{
+  color: #ffffff;
+}
+#signup-view .signup-heading{
+  margin-left: 50px;
+
+}
+#signup-view .slider-slide {
+  /*padding-top: 80px;*/
+  color: #ffffff;
+  background: linear-gradient(15deg, rgb(239, 70, 58), #ff5a92);
+
+  font-family: 'Reem Kufi', sans-serif;
+  font-weight: 300;
+}
+#signup-view .slider-div{
+  padding-top: 130px;
+  padding-left: 50px;
+  padding-right: 50px;
+}
+#signup-view .item{
+  background-color: transparent;
+  border: none;
+  border-bottom: 1px solid #ffffff;
+  color: #ffffff;
+}
+#signup-view *::-webkit-input-placeholder {
+  color: white !important;
+  font-family: 'Reem Kufi', sans-serif;
+}
+#signup-view *:-moz-placeholder {
+  color: white !important;
+  font-family: 'Reem Kufi', sans-serif;
+}
+#signup-view *:-ms-input-placeholder { /* IE10+ */
+  color: white !important;
+  font-family: 'Reem Kufi', sans-serif;
+}
+#signup-view .forget-pass , #signup-view .forget-pass a{
+  text-align: center;
+  padding: 20px;
+  color: #ffffff;
+}
+
+#signup-view #logo {
+  margin: 30px 0px;
+}
+
+#signup-view #list {
+  width: 170px;
+  margin: 30px auto;
+  font-size: 20px;
+}
+#signup-view #list ol {
+  margin-top: 30px;
+}
+#signup-view #list ol li {
+  text-align: left;
+  list-style: decimal;
+  margin: 10px 0px;
+}
+
+#signup-view .button.ng-hide{
+  display:none;
+}
+#signup-view .float-button {
+
+  background-color:#fb699a;
+  opacity: 0.9;
+  color: white;
+  border-radius: 50%;
+  /*border-radius:15% 0 0 0;*/
+  width: 30px;
+  padding: 25px;
+  font-size: 40px;
+  position: fixed;
+  bottom: 5%; /* Adjust height */
+  right: 5%; /* Adjust position */
+  z-index: 1000;
+}
+
+#signup-view .float-button .height_fix {
+  margin-top: 100%;
+  border: 1px solid red;
+}
+
+#signup-view .float-button .content {
+  position: absolute;
+  left: 0;
+  top: 50%;
+  height: 100%;
+  width: 100%;
+  text-align: center;
+  margin-top: -20px;
+  color: white;
+}

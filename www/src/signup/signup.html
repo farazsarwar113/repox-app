@@ -1,0 +1,75 @@
+<ion-view view-title="Signup" id="signup-view">
+
+  <ion-slide-box on-slide-changed="slideChanged(index)" ng-init="lockSlide()">
+    <ion-slide>
+      <button class="button ion-android-arrow-back button-large button-clear back-button no-animation"
+              ng-click="goTo('landingPage')"></button>
+      <button class="button ion-android-close button-large button-clear back-button no-animation"
+              ng-click="goTo('landingPage')"
+              style="float: right"></button>
+      <h3 class="signup-heading">SIGNUP!!</h3>
+      <div class="slider-div">
+        <h3>What's your name?</h3>
+        <label class="item item-input">
+          <input type="text" placeholder="First Name">
+        </label>
+        <label class="item item-input">
+          <input type="text" placeholder="Last Name">
+        </label>
+      </div>
+      <div class="float-button">
+        <span class="height-fix">
+          <a class="content" ng-click="next()">
+            <i class="ion-ios-arrow-right"> </i>
+          </a>
+        </span>
+      </div>
+    </ion-slide>
+    <ion-slide>
+      <button class="button ion-android-arrow-back button-large button-clear back-button no-animation"
+              ng-click="previous()"></button>
+      <button class="button ion-android-close button-large button-clear back-button no-animation"
+              ng-click="goTo('landingPage')"
+              style="float: right"></button>
+      <h3 class="signup-heading">SIGNUP!!</h3>
+      <div class="slider-div">
+        <h3>What's your email address</h3>
+        <label class="item item-input">
+          <input type="text" placeholder="Email Address">
+        </label>
+      </div>
+      <div class="float-button">
+        <span class="height-fix">
+          <a class="content" ng-click="next()">
+            <i class="ion-ios-arrow-right"> </i>
+          </a>
+        </span>
+      </div>
+    </ion-slide>
+    <ion-slide>
+      <button class="button ion-android-arrow-back button-large button-clear back-button no-animation"
+              ng-click="previous()"></button>
+      <button class="button ion-android-close button-large button-clear back-button no-animation"
+              ng-click="goTo('landingPage')"
+              style="float: right"></button>
+      <h3 class="signup-heading">SIGNUP!!</h3>
+      <div class="slider-div">
+        <h3>Enter your password</h3>
+        <label class="item item-input">
+          <input type="password" placeholder="Password">
+        </label>
+        <label class="item item-input">
+          <input type="password" placeholder="Confirm Password">
+        </label>
+      </div>
+      <div class="float-button">
+        <span class="height-fix">
+          <a class="content" ng-click="next()">
+            <i class="ion-ios-arrow-right"> </i>
+          </a>
+        </span>
+      </div>
+    </ion-slide>
+  </ion-slide-box>
+</ion-view>
+
