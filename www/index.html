@@ -1,35 +1,38 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
-    <title></title>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+  <title></title>
 
-    <link rel="manifest" href="manifest.json">
+  <link rel="manifest" href="manifest.json">
 
-    <!-- un-comment this code to enable service worker
-    <script>
-      if ('serviceWorker' in navigator) {
-        navigator.serviceWorker.register('service-worker.js')
-          .then(() => console.log('service worker installed'))
-          .catch(err => console.log('Error', err));
-      }
-    </script>-->
+  <!-- un-comment this code to enable service worker
+  <script>
+    if ('serviceWorker' in navigator) {
+      navigator.serviceWorker.register('service-worker.js')
+        .then(() => console.log('service worker installed'))
+        .catch(err => console.log('Error', err));
+    }
+  </script>-->
 
-    <link href="lib/ionic/css/ionic.css" rel="stylesheet">
-    <link href="css/style.css" rel="stylesheet">
-    <link href="css/login.css" rel="stylesheet">
-    <link href="css/signup.css" rel="stylesheet">
-    <link href="css/landing-page.css" rel="stylesheet">
-    <link href="css/github.css" rel="stylesheet">
-    <link href="css/common.css" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Reem%20Kufi" rel="stylesheet">
-    <!-- IF using Sass (run gulp sass first), then uncomment below and remove the CSS includes above
-    <link href="css/ionic.app.css" rel="stylesheet">
-    -->
+  <link href="lib/ionic/css/ionic.css" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
+  <link href="css/login.css" rel="stylesheet">
+  <link href="css/signup.css" rel="stylesheet">
+  <link href="css/landing-page.css" rel="stylesheet">
+  <link href="css/github.css" rel="stylesheet">
+  <link href="css/common.css" rel="stylesheet">
+  <link href="css/all-repo.css" rel="stylesheet">
+  <link href="css/profile.css" rel="stylesheet">
+
+  <link href="https://fonts.googleapis.com/css?family=Reem%20Kufi" rel="stylesheet">
+  <!-- IF using Sass (run gulp sass first), then uncomment below and remove the CSS includes above
+  <link href="css/ionic.app.css" rel="stylesheet">
+  -->
 
 
-  </head>
+</head>
 
   <body ng-app="myApp">
     <ion-nav-view></ion-nav-view>
@@ -57,5 +60,9 @@
     <script src="src/bitbucket/login/bitbucket-login.contoller.js"></script>
     <script src="src/gitlab/gitlab.router.js"></script>
     <script src="src/gitlab/login/gitlab-login.contoller.js"></script>
+    <script src="src/all-repo/all-repo.router.js"></script>
+    <script src="src/all-repo/all-repo.controller.js"></script>
+    <script src="src/profile/profile.router.js"></script>
+    <script src="src/profile/profile.controller.js"></script>
   </body>
 </html>

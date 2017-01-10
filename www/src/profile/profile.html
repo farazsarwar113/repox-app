@@ -1,0 +1,67 @@
+<ion-pane>
+  <ion-view title="Faraz Sarwar" id="profile-view">
+    <ion-nav-bar class="bar-stable">
+      <ion-nav-buttons side="left">
+        <button class="button back-button buttons button-clear header-item"
+                ng-click="goTo();">
+          <i class="icon ion-ios-arrow-back"></i>
+        </button>
+      </ion-nav-buttons>
+      <ion-nav-buttons side="right">
+        <button class="button back-button buttons button-clear header-item" ng-click="">
+          <i class="icon ion-edit"></i>
+        </button>
+      </ion-nav-buttons>
+
+    </ion-nav-bar>
+
+    <ion-content class="dark-text" title="Venkman"
+                 nav-direction="swap">
+      <div class="item container-header-height">
+        <img class="size-avatar-head" ng-src="{{vm.me.image || 'img/GitHub-Icon-01.png'}}">
+        <div class="vertical-divider">
+          <h1 class="profile-name">Faraz Sarwar
+          </h1>
+          <div>
+            Username:
+            <span class="word-wrap-none">farazsarwar112</span>
+          </div>
+          <div>
+            Joined:
+            <span class="profile-date">{{createdAt | date:'MMM d, y'}}</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col">
+          <div class="list card">
+
+            <div class="item item-avatar card-block">
+              <img class="size-avatar" ng-src="{{vm.me.image || 'img/GitHub-Icon-01.png'}}">
+            </div>
+
+              <p class="sync-repo">
+                <a href="#" class="subdued">Synced Repoisitores : 2</a>
+              </p>
+
+          </div>
+        </div>
+        <div class="col">
+          <div class="list card">
+
+            <div class="item item-avatar card-block">
+              <img class="size-avatar" ng-src="{{vm.me.image || 'img/GitHub-Icon-01.png'}}">
+            </div>
+
+              <p class="sync-repo">
+                <a href="#" class="subdued">Synced Repoisitores : 2</a>
+              </p>
+
+          </div>
+        </div>
+      </div>
+    </ion-content>
+
+  </ion-view>
+</ion-pane>
