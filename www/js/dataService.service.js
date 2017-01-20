@@ -20,4 +20,9 @@ angular.module('myApp')
         return Restangular.one('gitlab').one('repositories').post(data);
       }
     };
+
+    return {
+      user: user,
+      gitlab: gitlab
+    }
   });

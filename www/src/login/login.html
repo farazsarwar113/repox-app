@@ -11,7 +11,7 @@
       <div class="slider-div">
         <h3>What's your email address?</h3>
         <label class="item item-input">
-          <input type="text" placeholder="Email Address">
+          <input type="text" placeholder="Email Address" ng-model="user.username">
         </label>
       </div>
       <div class="float-button">
@@ -32,13 +32,13 @@
       <div class="slider-div">
         <h3>Enter your password</h3>
         <label class="item item-input">
-          <input type="password" placeholder="Password">
+          <input type="password" placeholder="Password" ng-model="user.password">
         </label>
         <p class="forget-pass"><a>Forget Password?</a></p>
       </div>
       <div class="float-button">
         <span class="height-fix">
-          <a class="content" ng-click="next()">
+          <a class="content" ng-click="login()">
             <i class="ion-ios-arrow-right"> </i>
           </a>
         </span>

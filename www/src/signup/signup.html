@@ -10,12 +10,14 @@
       <h3 class="signup-heading">SIGNUP!!</h3>
       <div class="slider-div">
         <h3>What's your name?</h3>
-        <label class="item item-input">
-          <input type="text" placeholder="First Name">
-        </label>
-        <label class="item item-input">
-          <input type="text" placeholder="Last Name">
-        </label>
+        <form name="myForm">
+          <label class="item item-input">
+            <input type="text" placeholder="First Name" name="myName" ng-model="user.firstname">
+          </label>
+          <label class="item item-input">
+            <input type="text" placeholder="Last Name" name="myLast" ng-model="user.lastname">
+          </label>
+        </form>
       </div>
       <div class="float-button">
         <span class="height-fix">
@@ -35,7 +37,7 @@
       <div class="slider-div">
         <h3>What's your email address</h3>
         <label class="item item-input">
-          <input type="text" placeholder="Email Address">
+          <input type="text" placeholder="Email Address" ng-model="user.username">
         </label>
       </div>
       <div class="float-button">
@@ -56,7 +58,7 @@
       <div class="slider-div">
         <h3>Enter your password</h3>
         <label class="item item-input">
-          <input type="password" placeholder="Password">
+          <input type="password" placeholder="Password" ng-model="user.password">
         </label>
         <label class="item item-input">
           <input type="password" placeholder="Confirm Password">
@@ -64,7 +66,7 @@
       </div>
       <div class="float-button">
         <span class="height-fix">
-          <a class="content" ng-click="next()">
+          <a class="content" ng-click="signup()">
             <i class="ion-ios-arrow-right"> </i>
           </a>
         </span>
