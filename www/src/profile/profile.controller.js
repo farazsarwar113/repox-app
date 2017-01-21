@@ -1,6 +1,10 @@
 angular.module('myApp')
 
-  .controller('ProfileCtrl', function($scope,$ionicSlideBoxDelegate, $state, $ionicModal, $timeout) {
+  .controller('ProfileCtrl', function($scope,$ionicSlideBoxDelegate, $state, $rootScope,$ionicModal, $timeout) {
+    setTimeout(function () {
+      console.log($rootScope.user);
+      $scope.user = $rootScope.user;
+    },1000);
     $scope.lockSlide = function () {
       $ionicSlideBoxDelegate.enableSlide( false );
     };

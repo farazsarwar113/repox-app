@@ -30,7 +30,7 @@ angular.module('myApp')
         Restangular.setDefaultHeaders({'x-access-token' : res.data.token});
         $rootScope.user = res.data.user;
         console.log($rootScope.user);
-        $state.go('profile');
+        $state.go('home');
       },function(err){
         console.log(err);
         $ionicPopup.alert({

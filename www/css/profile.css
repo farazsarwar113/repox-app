@@ -1,3 +1,41 @@
+#profile-view h3{
+  font-size: 22px;
+}
+#profile-view h4{
+  color: white;
+  font-size: 18px;
+}
+#profile-view .profile-img{
+  margin-left: 30%;
+}
+#profile-view .profile-card{
+  margin: 0px;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  background-color: #444;
+}
+#profile-view .profile-card .item{
+  background-color: transparent;
+}
+#profile-view .profile-head{
+  text-align: center;
+}
+#profile-view .profle-acc{
+  color: black;
+}
+#profile-view .item h2{
+  font-size: 24px;
+  margin-top: 20px;
+  text-align: center;
+}
+#profile-view .item-thumbnail-left, .item-thumbnail-left .item-content {
+  padding-top: 16px;
+  padding-left: 60px;
+}
+.item-thumbnail-left > img:first-child, .item-thumbnail-left .item-image, .item-thumbnail-left .item-content > img:first-child, .item-thumbnail-left .item-content .item-image {
+  left: 20%;
+}
+
 #profile-view .size-avatar{
   width: 72px;
   height: 72px;
@@ -49,3 +87,4 @@
 #profile-view .sync-repo{
   text-align: center;
 }
+

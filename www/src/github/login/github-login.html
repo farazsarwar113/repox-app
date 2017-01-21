@@ -7,16 +7,16 @@
       <h3>Login to GitHub</h3>
       <div class="list">
         <label class="item item-input">
-          <span class="input-label">Email</span>
-          <input type="text">
+          <span class="input-label">Username</span>
+          <input type="text" ng-model="github.username">
         </label>
         <label class="item item-input">
           <span class="input-label">Password</span>
-          <input type="password">
+          <input type="password" ng-model="github.password">
         </label>
       </div>
       <button class="button button-dark"
-              ng-click="goTo('landingPage')" style="width: 33%">
+              ng-click="githubLogin()" style="width: 33%">
         Login
       </button>
     </div>

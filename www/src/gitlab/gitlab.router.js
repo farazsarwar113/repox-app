@@ -8,5 +8,14 @@ angular.module('myApp')
         templateUrl: 'src/gitlab/login/gitlab-login.html',
         controller: 'GitLabLoginCtrl'
       })
-
+      .state('gitlabProfile', {
+        url: '/gitlab-profile',
+        templateUrl: 'src/gitlab/profile/gitlab-profile.html',
+        controller: 'GitLabProfileCtrl',
+        resolve: {
+          r_Gprofile: function (dataService) {
+            return dataService.gitlab.getUserData();
+          }
+        }
+      })
   });

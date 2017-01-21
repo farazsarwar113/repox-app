@@ -1,14 +1,16 @@
 angular.module('myApp')
 
-  .controller('AllRepoCtrl', function($scope,$ionicSlideBoxDelegate, $state,$ionicModal, r_repositories,$ionicPopup,$timeout) {
+  .controller('RepoCtrl', function($scope,$ionicSlideBoxDelegate, $state,$ionicModal, r_repository,$ionicPopup,$timeout) {
 
-    console.log(r_repositories.data);
-    if(r_repositories.data.github){
-      $scope.repositories = r_repositories.data.github;
+    console.log(r_repository.data);
+    if(r_repository.data.github){
+      $scope.repository = r_repository.data.github.repository;
+      $scope.contents = r_repository.data.github.contents;
       $scope.title = 'GitHub';
     }
-    else if(r_repositories.data.gitlab){
-      $scope.repositories = r_repositories.data.gitlab;
+    else if(r_repository.data.gitlab){
+      $scope.repository = r_repository.data.gitlab.repository;
+      $scope.contents = r_repository.data.gitlab.contents;
       $scope.title = 'GitLab';
     }
     $scope.goTo = function (state) {

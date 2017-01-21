@@ -7,16 +7,16 @@
       <h3>Login to GitLab</h3>
       <div class="list">
         <label class="item item-input">
-          <span class="input-label">Email</span>
-          <input type="text">
+          <span class="input-label">Username</span>
+          <input type="text" ng-model="gitlab.username">
         </label>
         <label class="item item-input">
-          <span class="input-label">Password</span>
-          <input type="password">
+          <span class="input-label">Private Token</span>
+          <input type="password" ng-model="gitlab.private_token">
         </label>
       </div>
       <button class="button button-dark"
-              ng-click="goTo('landingPage')" style="width: 33%">
+              ng-click="gitlabLogin()" style="width: 33%">
         Login
       </button>
     </div>
