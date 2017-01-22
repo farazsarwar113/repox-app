@@ -1,7 +1,9 @@
 #all-repo .item h2{
   font-size: 20px;
 }
-
+#all-repo h3{
+  color: black;
+}
 #all-repo .delete-button{
   float: right;
   margin-top: 18px;

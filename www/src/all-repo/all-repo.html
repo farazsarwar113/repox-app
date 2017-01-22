@@ -7,7 +7,12 @@
           <i class="icon ion-ios-arrow-back"></i>
         </button>
       </ion-nav-buttons>
-
+      <ion-nav-buttons side="right">
+        <button class="button back-button buttons button-clear header-item"
+                ng-click="openModal();">
+          <i class="icon ion-plus-circled"></i>
+        </button>
+      </ion-nav-buttons>
     </ion-nav-bar>
 
 
@@ -49,5 +54,26 @@
       </ion-list>
 
     </ion-content>
+    <script id="add-reo-modal.html" type="text/ng-template">
+      <ion-modal-view>
+        <ion-header-bar class="bar bar-header bar-positive">
+          <h1 class="title">Add Repository</h1>
+          <button class="button button-clear button-primary" ng-click="modal.hide()">Cancel</button>
+        </ion-header-bar>
+        <ion-content class="padding">
+          <div class="list">
+            <label class="item item-input">
+              <span class="input-label">Repository Name</span>
+              <input ng-model="repo.name" type="text">
+            </label>
+            <label class="item item-input">
+              <span class="input-label">Description</span>
+              <input ng-model="repo.description" type="text">
+            </label>
+            <button class="button button-full button-positive" ng-click="addRepo(repo)">Add</button>
+          </div>
+        </ion-content>
+      </ion-modal-view>
+    </script>
   </ion-view>
 </ion-pane>

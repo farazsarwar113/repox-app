@@ -21,6 +21,22 @@ angular.module('myApp')
       },
       repositories: function (data) {
         return Restangular.one('gitlab').one('repositories').post('',data);
+      },
+      addRepo: function (data) {
+        return Restangular.one('gitlab').one('repositories').one('add').post('',data);
+      },
+      removeRepo: function (data,rid) {
+        console.log(data , rid);
+        return Restangular.one('gitlab').one('repositories').one(rid).one('delete').post('',data);
+      },
+      getRepo: function (rid,data) {
+        return Restangular.one('gitlab').one('repositories').one(rid).post('',data);
+      },
+      getCommits: function (rid,data) {
+        return Restangular.one('gitlab').one('repositories').one(rid).one('commits').post('',data);
+      },
+      getMembers: function (rid, data) {
+        return Restangular.one('gitlab').one('repositories').one(rid).one('members').post('',data);
       }
     };
 
@@ -36,6 +52,9 @@ angular.module('myApp')
       },
       getRepo: function (repo_name) {
         return Restangular.one('github').one('repositories').one(repo_name).get();
+      },
+      addRepo: function (data) {
+        return Restangular.one('github').one('repositories').post('', data);
       },
       getRepoContri: function (repo_name) {
         return Restangular.one('github').one('repositories').one(repo_name).one('contributors').get();

@@ -1,0 +1,55 @@
+<ion-view title="{{repository.name}}">
+  <ion-nav-bar class="bar-stable">
+    <ion-nav-buttons>
+      <button class="button back-button buttons button-clear header-item" ng-if="title == 'GitLab'"
+              ng-click="goTo('all-repo-gitlab')">
+        <i class="icon ion-ios-arrow-back"></i>
+      </button>
+      <button class="button back-button buttons button-clear header-item" ng-if="title == 'GitHub'"
+              ng-click="goTo('all-repo-github')">
+        <i class="icon ion-ios-arrow-back"></i>
+      </button>
+    </ion-nav-buttons>
+    <ion-nav-buttons side="right">
+      <button class="button back-button buttons button-clear header-item"
+              ng-click="openModal();">
+        <i class="icon ion-plus-circled"></i>
+      </button>
+    </ion-nav-buttons>
+  </ion-nav-bar>
+  <ion-tabs class="tabs-striped tabs-top tabs-background-stable">
+    <ion-tab class="" title="Files" nav-direction="swap">
+      <ion-content >
+        <div class="list has-header has-tabs-top">
+          <p class="item item-icon-left" ng-repeat="content in contents">
+            <i class="icon ion-ios-folder" ng-if="content.type == 'tree' || content.type == 'dir'"></i>
+            <i class="icon ion-document-text" ng-if="content.type == 'blob' || content.type == 'file'"></i>
+            {{content.name}}
+          </p>
+        </div>
+      </ion-content>
+    </ion-tab>
+    <ion-tab class="dark-text" title="Commits" nav-direction="swap">
+      <ion-content >
+        <div class="list has-header has-tabs-top">
+          <p class="item item-icon-left" ng-repeat="commit in commits">
+            <h2>{{commit.committer_name}} <span>{{commit.committer_email}}</span><h2>
+          </p>
+        </div>
+      </ion-content>
+    </ion-tab>
+    <ion-tab class="dark-text" title="Contributors" nav-direction="swap">
+      <ion-content >
+        <div class="list has-header has-tabs-top">
+          <p class="item item-avatar" ng-repeat="member in members">
+            <img ng-src="{{member.avatar_url}}">
+            <h2>{{member.name}}<h2>
+            <p>{{member.username}}</p>
+          </p>
+        </div>
+      </ion-content>
+    </ion-tab>
+  </ion-tabs>
+
+
+</ion-view>
