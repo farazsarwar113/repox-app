@@ -5,7 +5,8 @@
 // the 2nd parameter is an array of 'requires'
 // 'starter.controllers' is found in controllers.js
 angular.module('myApp', ['ionic','restangular','ngStorage'])
-  .constant('SERVER_PATH',"http://localhost:3000")
+  //.constant('SERVER_PATH',"http://localhost:3000")
+  .constant('SERVER_PATH',"https://repox.mybluemix.net")
   .run(function($ionicPlatform,Restangular, $localStorage, dataService,$rootScope) {
     $ionicPlatform.ready(function() {
       // Hide the accessory bar by default (remove this to show the accessory bar above the keyboard

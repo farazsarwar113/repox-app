@@ -2,19 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="456fab0b-98a9-4276-93dc-7ce4d79b50ca" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/css/all-repo.css" afterPath="$PROJECT_DIR$/www/css/all-repo.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/css/home.css" afterPath="$PROJECT_DIR$/www/css/home.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/css/style.css" afterPath="$PROJECT_DIR$/www/css/style.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ionic.config.json" afterPath="$PROJECT_DIR$/ionic.config.json" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/index.html" afterPath="$PROJECT_DIR$/www/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/js/dataService.service.js" afterPath="$PROJECT_DIR$/www/js/dataService.service.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/src/all-repo/all-repo.controller.js" afterPath="$PROJECT_DIR$/www/src/all-repo/all-repo.controller.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/src/all-repo/all-repo.html" afterPath="$PROJECT_DIR$/www/src/all-repo/all-repo.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/src/all-repo/all-repo.router.js" afterPath="$PROJECT_DIR$/www/src/all-repo/all-repo.router.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/src/profile/profile.html" afterPath="$PROJECT_DIR$/www/src/profile/profile.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/src/repository/repository.controller.js" afterPath="$PROJECT_DIR$/www/src/repository/repository.controller.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/src/repository/repository.html" afterPath="$PROJECT_DIR$/www/src/repository/repository.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/src/repository/repository.router.js" afterPath="$PROJECT_DIR$/www/src/repository/repository.router.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/js/app.js" afterPath="$PROJECT_DIR$/www/js/app.js" />
     </list>
     <ignored path="Repox-app.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -85,7 +75,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="repository.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="repository.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/www/src/repository/repository.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="453">
@@ -95,11 +85,21 @@
           </provider>
         </entry>
       </file>
+      <file leaf-file-name="app.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/www/js/app.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="122">
+              <caret line="8" column="56" selection-start-line="8" selection-start-column="56" selection-end-line="8" selection-end-column="56" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/www/index.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="221">
-              <caret line="40" column="31" selection-start-line="40" selection-start-column="31" selection-end-line="40" selection-end-column="31" />
+              <caret line="41" column="31" selection-start-line="41" selection-start-column="31" selection-end-line="41" selection-end-column="31" />
               <folding />
             </state>
           </provider>
@@ -143,7 +143,6 @@
         <option value="$PROJECT_DIR$/www/src/signup/popup/popup.html" />
         <option value="$PROJECT_DIR$/www/src/signup/signup.controller.js" />
         <option value="$PROJECT_DIR$/www/src/login/login.html" />
-        <option value="$PROJECT_DIR$/www/js/app.js" />
         <option value="$PROJECT_DIR$/www/src/github/login/github-login.html" />
         <option value="$PROJECT_DIR$/www/src/gitlab/gitlab.router.js" />
         <option value="$PROJECT_DIR$/www/src/gitlab/profile/gitlab-profile.controller.js" />
@@ -170,6 +169,7 @@
         <option value="$PROJECT_DIR$/www/src/repository/repository.controller.js" />
         <option value="$PROJECT_DIR$/www/index.html" />
         <option value="$PROJECT_DIR$/www/src/repository/repository.html" />
+        <option value="$PROJECT_DIR$/www/js/app.js" />
       </list>
     </option>
   </component>
@@ -509,12 +509,12 @@
       <workItem from="1484758707878" duration="4604000" />
       <workItem from="1484943245046" duration="2267000" />
       <workItem from="1484982875659" duration="18602000" />
-      <workItem from="1485074823103" duration="11762000" />
+      <workItem from="1485074823103" duration="13046000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="60880000" />
+    <option name="totallyTimeSpent" value="62164000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1378" height="780" extended-state="1" />
@@ -672,14 +672,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="303">
           <caret line="18" column="0" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/www/js/app.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="343">
-          <caret line="26" column="43" selection-start-line="26" selection-start-column="6" selection-end-line="26" selection-end-column="43" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -883,7 +875,7 @@
     <entry file="file://$PROJECT_DIR$/www/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="221">
-          <caret line="40" column="31" selection-start-line="40" selection-start-column="31" selection-end-line="40" selection-end-column="31" />
+          <caret line="41" column="31" selection-start-line="41" selection-start-column="31" selection-end-line="41" selection-end-column="31" />
           <folding />
         </state>
       </provider>
@@ -924,6 +916,14 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="453">
           <caret line="51" column="13" selection-start-line="51" selection-start-column="13" selection-end-line="51" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/www/js/app.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="122">
+          <caret line="8" column="56" selection-start-line="8" selection-start-column="56" selection-end-line="8" selection-end-column="56" />
           <folding />
         </state>
       </provider>
